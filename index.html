@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="accountModal" class="modal">
+      <div class="modal-content">
+        <label for="passwordFor" style="color: black"
+          >The Password Is For</label
+        >
+        <input
+          class="btn"
+          type="text"
+          name="passwordFor"
+          id="passwordFor"
+          placeholder="The Passowrd Is For"
+        />
+        <button id="submitAccount" onclick="submitAccount()">Submit</button>
+        <button onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+
     <div class="container">
       <h1>
         Generate a <br />
@@ -14,10 +31,10 @@
       </h1>
       <div class="display">
         <input type="text" id="password" placeholder="Password" />
-        <img src="images/copy.png" alt="" onclick="copyPassowrd()" />
+        <img src="images/copy.png" alt="" onclick="copyPassword()" />
       </div>
-      <button onclick="createPassoword()">
-        <img src="images/generate.png" alt="" />Generate Passowrd
+      <button onclick="createPassword()">
+        <img src="images/generate.png" alt="" />Generate Password
       </button>
     </div>
     <script src="script.js"></script>
